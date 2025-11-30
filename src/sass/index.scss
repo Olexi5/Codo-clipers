@@ -1,5 +1,6 @@
-@import './common';
-@import './example';
+@import 'base/common';
+@import 'base/reset';
+@import 'base/container';
 @import 'layers/header';
 @import 'layers/hero';
 @import 'layers/product';
