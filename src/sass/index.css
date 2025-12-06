@@ -37,4 +37,46 @@ ul {
   .container {
     max-width: 1200px;
   }
+}
+
+.footer {
+  background-color: #84a178;
+  padding-top: 1095px;
+  padding-bottom: 20px;
+}
+.footer__pretitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 16px;
+}
+.footer__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+.footer__list {
+  display: flex;
+  justify-content: end;
+}
+.footer__svg {
+  width: 34px;
+  height: 34px;
+}
+
+.title {
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+
+.contact {
+  text-align: right;
 }/*# sourceMappingURL=index.css.map */
