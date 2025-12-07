@@ -39,44 +39,77 @@ ul {
   }
 }
 
-.footer {
-  background-color: #84a178;
-  padding-top: 1095px;
-  padding-bottom: 20px;
+.howmade {
+  padding-top: 62px;
+  padding-bottom: 31px;
+  text-align: center;
+  background-color: rgb(132, 161, 120);
 }
-.footer__pretitle {
+
+.howmade-pretitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: #fcfcfc;
-  margin-bottom: 16px;
+  color: #fff;
 }
-.footer__title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 34px;
+
+.howmade-title {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
   line-height: 100%;
   letter-spacing: 4%;
   text-transform: uppercase;
-  color: #fcfcfc;
-}
-.footer__list {
-  display: flex;
-  justify-content: end;
-}
-.footer__svg {
-  width: 34px;
-  height: 34px;
+  color: #fff;
 }
 
-.title {
-  margin-left: 20px;
-  margin-bottom: 60px;
+.howmade-img {
+  width: 100%;
 }
 
-.contact {
-  text-align: right;
+.howmade-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  color: rgb(252, 252, 252);
+}
+
+.howmade-list {
+  padding-top: 10px;
+}
+
+.howmade-item {
+  padding-top: 10px;
+}
+
+.howmade-numbers {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.howmade-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #fff;
+}
+
+.svg-item {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 22px;
 }/*# sourceMappingURL=index.css.map */
