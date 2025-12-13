@@ -187,12 +187,18 @@
   display: none;
 }
 .howmade-backdrop {
-  background-color: rgba(0, 0, 0, 0.218);
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.625);
 }
 .howmade-modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   width: 568px;
   height: 449px;
   border-radius: 10px;
@@ -202,6 +208,7 @@
   border: none;
   width: 24px;
   height: 24px;
+  background: none;
 }
 .howmade-modal-title {
   font-family: 'Seymour One', sans-serif;
