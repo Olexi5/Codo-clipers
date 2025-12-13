@@ -3,6 +3,13 @@
   padding-bottom: 31px;
   text-align: center;
   background-color: rgba(132, 161, 120, 1);
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-color: rgba(132, 161, 120, 1);
+  }
 }
 .howmade-pretitle {
   font-family: 'Montserrat', sans-serif;
@@ -12,6 +19,17 @@
   letter-spacing: 0%;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 4%;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 .howmade-title {
   font-family: 'Seymour One', sans-serif;
@@ -21,9 +39,36 @@
   letter-spacing: 4%;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 6%;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+.howmade-first-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+  }
 }
 .howmade-img {
   width: 100%;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    width: 356px;
+    height: 356px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 490px;
+    height: 490px;
+  }
 }
 .howmade-text {
   font-family: 'Montserrat', sans-serif;
@@ -32,12 +77,68 @@
   line-height: 176%;
   letter-spacing: 4%;
   color: rgba(252, 252, 252, 1);
+  margin-bottom: 4px;
+  @media screen and (min-width: 768px) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 4%;
+    text-align: start;
+  }
+  @media screen and (min-width: 1200px) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 4%;
+    text-align: start;
+    margin-right: 200px;
+  }
+}
+.howmade-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  background-color: rgba(248, 210, 78, 1);
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  padding-right: 35px;
+  border-radius: 10px;
+  margin-top: 24px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: start;
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: start;
+    margin-top: 54px;
+  }
 }
 .howmade-list {
-  padding-top: 10px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 .howmade-item {
-  padding-top: 10px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 .howmade-numbers {
   font-family: 'Montserrat', sans-serif;
@@ -48,18 +149,74 @@
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 .howmade-description {
- font-family: "Montserrat",sans-serif;
-font-weight: 400;
-font-size: 12px;
-line-height: 170%;
-letter-spacing: 0%;
-text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: center;
   color: #fff;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
-.svg-item{
-    width: 50px;
-    height: 50px;
-    margin-bottom: 22px;
+.svg-item {
+  width: 50px;
+  height: 50px;
+  margin-top: 28px;
+  margin-bottom: 22px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+.is-hidden {
+  display: none;
+}
+.howmade-backdrop {
+  background-color: rgba(0, 0, 0, 0.218);
+}
+.howmade-modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 568px;
+  height: 449px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.howmade-btn-modal-close {
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+.howmade-modal-title {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+.howmade-video {
+  background-color: black;
+}
+.howmade-modal-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
 }

@@ -45,6 +45,17 @@ ul {
   text-align: center;
   background-color: rgb(132, 161, 120);
 }
+@media screen and (min-width: 768px) {
+  .howmade {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade {
+    background-color: rgb(132, 161, 120);
+  }
+}
 
 .howmade-pretitle {
   font-family: "Montserrat", sans-serif;
@@ -54,6 +65,21 @@ ul {
   letter-spacing: 0%;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .howmade-pretitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 4%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-pretitle {
+    max-width: 1200px;
+  }
 }
 
 .howmade-title {
@@ -64,10 +90,46 @@ ul {
   letter-spacing: 4%;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .howmade-title {
+    font-family: "Seymour One", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 6%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-title {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .howmade-first-list {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+  }
 }
 
 .howmade-img {
   width: 100%;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .howmade-img {
+    width: 356px;
+    height: 356px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-img {
+    width: 490px;
+    height: 490px;
+  }
 }
 
 .howmade-text {
@@ -77,14 +139,83 @@ ul {
   line-height: 176%;
   letter-spacing: 4%;
   color: rgb(252, 252, 252);
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .howmade-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 4%;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 4%;
+    text-align: start;
+    margin-right: 200px;
+  }
 }
 
-.howmade-list {
-  padding-top: 10px;
+.howmade-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  background-color: rgb(248, 210, 78);
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  padding-right: 35px;
+  border-radius: 10px;
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .howmade-btn {
+    display: flex;
+    align-items: start;
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-btn {
+    display: flex;
+    align-items: start;
+    margin-top: 54px;
+  }
 }
 
-.howmade-item {
-  padding-top: 10px;
+@media screen and (min-width: 768px) {
+  .howmade-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-list {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .howmade-item {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-item {
+    max-width: 1200px;
+  }
 }
 
 .howmade-numbers {
@@ -97,6 +228,16 @@ ul {
   color: #fff;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .howmade-numbers {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-numbers {
+    max-width: 1200px;
+  }
+}
 
 .howmade-description {
   font-family: "Montserrat", sans-serif;
@@ -107,161 +248,76 @@ ul {
   text-align: center;
   color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .howmade-description {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-description {
+    max-width: 1200px;
+  }
+}
 
 .svg-item {
   width: 50px;
   height: 50px;
+  margin-top: 28px;
   margin-bottom: 22px;
 }
-
-.product {
-  margin-top: 60px;
-  background-image: url("../images/ice-cream-img/background_1x.jpg");
-}
-
-.product-intro-text {
-  text-align: center;
-  margin-bottom: 120px;
-}
 @media screen and (min-width: 768px) {
-  .product-intro-text {
-    margin-bottom: 200px;
+  .svg-item {
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .product-intro-text {
-    margin-bottom: 303px;
+  .svg-item {
+    max-width: 1200px;
   }
 }
 
-.product-title {
-  font-family: "Seymour One";
-  font-weight: 400;
-  font-size: 36px;
-  width: 100%;
+.is-hidden {
+  display: none;
 }
 
-.product-subtitle {
-  font-family: "Montserrat";
-  font-weight: 800;
-  font-size: 30px;
+.howmade-backdrop {
+  background-color: rgba(0, 0, 0, 0.218);
 }
 
-.product-list {
-  display: flex;
-  flex-direction: column;
-  gap: 163px;
-}
-@media screen and (min-width: 768px) {
-  .product-list {
-    flex-direction: row;
-    gap: 16px;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .product-list {
-    gap: 29px;
-  }
-}
-
-.product-item:first-child {
-  width: 100%;
+.howmade-modal {
   position: relative;
-  padding: 126px 60px 24px;
-  background-color: #aec6a5;
-  text-align: center;
-  border-radius: 24px;
-}
-@media screen and (min-width: 768px) {
-  .product-item:first-child {
-    padding: 108px 26px 12px;
-    width: 224px;
-    height: 428px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .product-item:first-child {
-    padding: 165px 100px 60px;
-    width: 370px;
-    height: 536px;
-  }
-}
-
-.product-item:nth-child(2) {
-  width: 100%;
-  position: relative;
-  padding: 126px 60px 24px;
-  background-color: #efd478;
-  text-align: center;
-  border-radius: 24px;
-}
-@media screen and (min-width: 768px) {
-  .product-item:nth-child(2) {
-    padding: 108px 26px 12px;
-    width: 224px;
-    height: 428px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .product-item:nth-child(2) {
-    padding: 165px 100px 60px;
-    width: 370px;
-    height: 536px;
-  }
-}
-
-.product-item:nth-child(3) {
-  width: 100%;
-  position: relative;
-  padding: 126px 60px 24px;
-  background-color: #d6936d;
-  text-align: center;
-  border-radius: 24px;
-}
-@media screen and (min-width: 768px) {
-  .product-item:nth-child(3) {
-    padding: 108px 26px 12px;
-    width: 224px;
-    height: 428px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .product-item:nth-child(3) {
-    padding: 165px 100px 60px;
-    width: 370px;
-    height: 536px;
-  }
-}
-
-.product-img {
-  display: block;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: -100px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-}
-@media screen and (min-width: 1200px) {
-  .product-img {
-    width: 302px;
-    height: 302px;
-    top: -155px;
-  }
+  width: 568px;
+  height: 449px;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
-.product-label {
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.86;
-  text-align: center;
+.howmade-btn-modal-close {
+  border: none;
+  width: 24px;
+  height: 24px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .feedback__user-info {
-    font-size: 16px;
-  }
+
+.howmade-modal-title {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+
+.howmade-video {
+  background-color: black;
+}
+
+.howmade-modal-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
 }
 
 .footer {
@@ -269,71 +325,39 @@ ul {
   padding-top: 1095px;
   padding-bottom: 20px;
 }
-
-.howmade-pretitle {
+.footer__pretitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: #fff;
-}
-
-.howmade-title {
-  font-family: "Seymour One", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 100%;
-  letter-spacing: 4%;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.howmade-img {
-  width: 100%;
-}
-
-.howmade-text {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 176%;
-  letter-spacing: 4%;
-  color: rgb(252, 252, 252);
-}
-
-.howmade-list {
-  padding-top: 10px;
-}
-
-.howmade-item {
-  padding-top: 10px;
-}
-
-.howmade-numbers {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 100%;
-  letter-spacing: 4%;
-  text-transform: uppercase;
-  color: #fff;
+  color: #fcfcfc;
   margin-bottom: 16px;
 }
-
-.howmade-description {
+.footer__title {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 170%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: #fff;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+.footer__list {
+  display: flex;
+  justify-content: end;
+}
+.footer__svg {
+  width: 34px;
+  height: 34px;
 }
 
-.svg-item {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 22px;
+.title {
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+
+.contact {
+  text-align: right;
 }/*# sourceMappingURL=index.css.map */
