@@ -44,47 +44,10 @@ ul {
   position: absolute;
 }
 
-.is-hidden {
-  display: none;
-}
-
-.burger__mob {
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background-color: #fff;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.no-scroll {
-  overflow: hidden;
-}
-
 .header__buttonburger {
   background: none;
   border: none;
   outline: none;
-  padding: 8px 4px;
-}
-
-.header__logo {
-  width: 40px;
-  height: 37px;
-  fill: #f8d24e;
-}
-
-.header__logo use {
-  width: 100%;
-  height: 100%;
-}
-
-.header__burger {
-  width: 32px;
-  height: 32px;
-  fill: #fff;
 }
 
 .hero__title {
@@ -92,7 +55,7 @@ ul {
   text-transform: uppercase;
   color: #fcfcfc;
   margin-bottom: 32px;
-  font-family: Seymour One, sans-serif;
+  font-family: "Seymour One", sans-serif;
   font-size: 26px;
   font-weight: 400;
 }
@@ -101,7 +64,7 @@ ul {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fcfcfc;
-  font-family: Seymour One, sans-serif;
+  font-family: "Seymour One", sans-serif;
   font-size: 34px;
   font-weight: 400;
   line-height: 33px;
@@ -178,7 +141,7 @@ ul {
 .hero__plate__text {
   color: #fff;
   margin-bottom: 29px;
-  font-family: DM Sans, sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 17px;
@@ -190,7 +153,53 @@ ul {
   fill: #fcfcfc;
 }
 
-.hero__list, .hero__plate__div {
+.hero__list,
+.hero__plate__div {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__plate__div {
+    display: flex;
+  }
+}
+.hero__div__bigicecream {
+  justify-content: center;
+  display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__div__bigicecream {
+    position: relative;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__bigicecream {
+    right: 20px;
+  }
+}
+.hero__plate__img {
+  margin-right: 32px;
+}
+
+.hero__plate__text {
+  color: #fff;
+  margin-bottom: 29px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.hero__icon__plate {
+  width: 40px;
+  height: 16px;
+  fill: #fcfcfc;
+}
+
+.hero__list,
+.hero__plate__div {
   display: none;
 }
 
