@@ -1,3 +1,69 @@
+<div class="product-backdrop is-hidden" data-product-modal>
+  <div class="product-modal">
+    <h2 class="product-modal-title">Chololate icecream</h2>
+    <!-- <img
+      src="../images/ice-cream-img/modalproduct/modalaboutproduct-chocolateicecream-1x.jpg"
+      alt="another ice cream"
+    /> -->
+    <ul class="modal-calories">
+      <li class="modal-cal-item">
+        <div class="modal-cal-frame">
+          <p class="modal-cal-ammount">320</p>
+          <p class="modal-cal-desc">kcal</p>
+        </div>
+      </li>
+      <li class="modal-cal-item">
+        <div class="modal-cal-frame">
+          <p class="modal-cal-ammount">4g</p>
+          <p class="modal-cal-desc">Protein</p>
+        </div>
+      </li>
+      <li class="modal-cal-item">
+        <div class="modal-cal-frame">
+          <p class="modal-cal-ammount">8,2g</p>
+          <p class="modal-cal-desc">Fats</p>
+        </div>
+      </li>
+      <li class="modal-cal-item">
+        <div class="modal-cal-frame">
+          <p class="modal-cal-ammount">40,4g</p>
+          <p class="modal-cal-desc">Carbs</p>
+        </div>
+      </li>
+    </ul>
+
+    <h3 class="modal-ing-title">Ingredients</h3>
+    <div class="modal-ing-lists">
+      <ul class="modal-ing-titles">
+        <li class="mit-item">Milk</li>
+        <li class="mit-item">Belgian chocolate</li>
+        <li class="mit-item">Cream</li>
+        <li class="mit-item">Cocoa powder</li>
+        <li class="mit-item">Sugar</li>
+        <li class="mit-item">Vanilla sugar</li>
+      </ul>
+
+      <ul class="modal-ing-ammount">
+        <li class="mia-item">100ml</li>
+        <li class="mia-item">20g</li>
+        <li class="mia-item">150ml</li>
+        <li class="mia-item">30g</li>
+        <li class="mia-item">40g</li>
+        <li class="mia-item">10g</li>
+      </ul>
+    </div>
+
+    <form action="" class="product-modal-form">
+      <input type="text" class="pmf-input" placeholder="Name" />
+      <input type="text" class="pmf-input" placeholder="Phone" />
+      <input type="text" class="pmf-comment" placeholder="Comment" />
+      <button class="pmf-button" type="button" data-product-modal-close>
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
 <section class="product">
   <div class="container">
     <div class="product-intro-text">
@@ -17,7 +83,9 @@
           Soft ice cream with a delicate taste. Made with milk, cream, sugar and
           natural stabilizer
         </p>
-        <button class="product-btn">→</button>
+        <button class="product-btn" type="button" data-product-modal-open>
+          →
+        </button>
       </li>
       <li class="product-item">
         <img
@@ -30,7 +98,9 @@
           Fragrant invigorating drink created from 100% natural ingredients
           without the use of preservatives and flavor enhancers
         </p>
-        <button class="product-btn">→</button>
+        <button class="product-btn" type="button" data-product-modal-open>
+          →
+        </button>
       </li>
       <li class="product-item">
         <img
@@ -43,7 +113,9 @@
           Sweet drinks based on milk and ice cream, supplemented with syrups,
           fruits, berries and other sweets of your choice
         </p>
-        <button class="product-btn">→</button>
+        <button class="product-btn" type="button" data-product-modal-open>
+          →
+        </button>
         <!--they will force me to use their svgs-->
       </li>
     </ul>
