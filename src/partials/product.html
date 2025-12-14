@@ -1,5 +1,5 @@
 <div class="product-backdrop is-hidden">
-  <div class="product-modal">
+  <div class="product-modal" data-product-modal>
     <h2 class="product-modal-title">Chololate icecream</h2>
     <!-- <img
       src="../images/ice-cream-img/modalproduct/modalaboutproduct-chocolateicecream-1x.jpg"
@@ -57,7 +57,9 @@
       <input type="text" class="pmf-input" placeholder="Name" />
       <input type="text" class="pmf-input" placeholder="Phone" />
       <input type="text" class="pmf-comment" placeholder="Comment" />
-      <button class="pmf-button" type="button">Submit</button>
+      <button class="pmf-button" type="button" data-product-modal-close>
+        Submit
+      </button>
     </form>
   </div>
 </div>
@@ -81,7 +83,9 @@
           Soft ice cream with a delicate taste. Made with milk, cream, sugar and
           natural stabilizer
         </p>
-        <button class="product-btn">→</button>
+        <button class="product-btn" type="button" data-product-modal-open>
+          →
+        </button>
       </li>
       <li class="product-item">
         <img
@@ -94,7 +98,9 @@
           Fragrant invigorating drink created from 100% natural ingredients
           without the use of preservatives and flavor enhancers
         </p>
-        <button class="product-btn">→</button>
+        <button class="product-btn" type="button" data-product-modal-open>
+          →
+        </button>
       </li>
       <li class="product-item">
         <img
@@ -107,7 +113,9 @@
           Sweet drinks based on milk and ice cream, supplemented with syrups,
           fruits, berries and other sweets of your choice
         </p>
-        <button class="product-btn">→</button>
+        <button class="product-btn" type="button" data-product-modal-open>
+          →
+        </button>
         <!--they will force me to use their svgs-->
       </li>
     </ul>
