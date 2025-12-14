@@ -2,7 +2,7 @@
   <div class="hero__passion__div">
     <h1 class="hero__title">ice cream made with passion</h1>
     <button type="button" class="hero__button">Products</button>
-    <a href="#" class="hero__link">How it’s made?</a>
+    <a href="#howmade" class="hero__link">How it’s made?</a>
   </div>
   <ul class="hero__list">
     <li class="hero__item">
@@ -15,12 +15,40 @@
     </li>
   </ul>
   <div class="hero__plate__div">
-    <!-- <img src="" alt="ice cream plate" /> -->
+    <img
+      srcset="
+        ./images/ice-cream-img/hero/hero-blowicecream_1x.jpg 1x,
+        ./images/ice-cream-img/hero/hero-blowicecream_2x.jpg 2x
+      "
+      src="./images/ice-cream-img/hero/hero-blowicecream_1x.jpg"
+      alt="ice cream plate"
+    />
     <p class="hero__plate__text">
       Indulge in a scoop of ice cream made with passion and treat your taste
       buds to an unforgettable experience!
     </p>
-    <!-- <svg class="hero__icon__plate"><use href=""></use></svg> -->
+    <svg class="hero__icon__plate">
+      <use href="./images/symbol-defs.svg#icon-hero-icon-arrow"></use>
+    </svg>
   </div>
-  <!-- <img src="" alt="big ice cream"> -->
+  <div class="hero__div__bigicecream">
+    <img
+      srcset="
+        ./images/ice-cream-img/hero/hero-bigicecream_1x.jpg 1x,
+        ./images/ice-cream-img/hero/hero-bigicecream_2x.jpg 2x
+      "
+      src="./images/ice-cream-img/hero/hero-bigicecream_1x.jpg"
+      alt="big ice cream"
+      class="hero__bigicecream"
+    />
+    <img
+      srcset="
+        ./images/ice-cream-img/hero/hero-points_1x.jpg 1x,
+        ./images/ice-cream-img/hero/hero-points_2x.jpg 2x
+      "
+      src="./images/ice-cream-img/hero/hero-points_1x.jpg"
+      alt="points"
+      class="hero__blow"
+    />
+  </div>
 </section>

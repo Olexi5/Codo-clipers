@@ -39,6 +39,175 @@ ul {
   }
 }
 
+.header {
+  width: 100%;
+  position: absolute;
+}
+
+.header__buttonburger {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.hero__title {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 32px;
+  font-family: "Seymour One", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.hero__title__passion {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  font-family: "Seymour One", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.hero {
+  background: #84a178;
+  padding-top: 98px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 12px;
+  }
+}
+.hero__passion__div {
+  margin-bottom: 12px;
+}
+
+.hero__blowtext__div {
+  width: 165px;
+}
+
+.passion__div__button {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.hero__button {
+  text-align: center;
+  color: #000;
+  background: none;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  outline: none;
+  padding: 11px 26px;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hero__link {
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-align: center;
+  color: #f8d24e;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.hero__div__bigicecream {
+  justify-content: center;
+  display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__div__bigicecream {
+    position: relative;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__bigicecream {
+    right: 20px;
+  }
+}
+.hero__plate__img {
+  margin-right: 32px;
+}
+
+.hero__plate__text {
+  color: #fff;
+  margin-bottom: 29px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.hero__icon__plate {
+  width: 40px;
+  height: 16px;
+  fill: #fcfcfc;
+}
+
+.hero__list,
+.hero__plate__div {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__plate__div {
+    display: flex;
+  }
+}
+.hero__div__bigicecream {
+  justify-content: center;
+  display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__div__bigicecream {
+    position: relative;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__bigicecream {
+    right: 20px;
+  }
+}
+.hero__plate__img {
+  margin-right: 32px;
+}
+
+.hero__plate__text {
+  color: #fff;
+  margin-bottom: 29px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.hero__icon__plate {
+  width: 40px;
+  height: 16px;
+  fill: #fcfcfc;
+}
+
+.hero__list,
+.hero__plate__div {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__plate__div {
+    display: flex;
+  }
+}
 .product {
   margin-top: 60px;
   background-image: url("../images/ice-cream-img/background_1x.jpg");

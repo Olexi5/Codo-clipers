@@ -1,19 +1,65 @@
 <section class="header">
   <div class="header__all__div">
-    <!-- <svg><use href=""></use></svg> -->
+    <svg><use href="./images/symbol-defs.svg#icon-Logo"></use></svg>
+    <button type="button" data-mob-open>
+      <svg class="header__buttonburger">
+        <use href="./images/symbol-defs.svg#icon-hero-icon-burger"></use>
+      </svg>
+      <div class="is-hidden" data-mob>
+        <div class="container">
+          <button type="button" data-mob-close>
+            <svg class="header__modalclose">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="header__modalnav">
+            <ul class="header__modallist">
+              <li class="header__modalitem">
+                <a href="./index.html" class="header__modallink">Home</a>
+              </li>
+              <li class="header__modalitem">
+                <a href="./index.html" class="header__modallink"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="header__modalitem">
+                <a href="./index.html" class="header__modallink"
+                  >Our products</a
+                >
+              </li>
+              <li class="header__modalitem">
+                <a href="./index.html" class="header__modallink">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="header__modalbutton__buy">
+            Buy now
+            <svg>
+              <use href="./images/symbol-defs.svg#icon-hero-icon-butt"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </button>
     <ul class="header__list">
-      <li class="header__item"><a href="#" class="header__link">Home</a></li>
+      <li class="header__item">
+        <a href="./index.html" class="header__link">Home</a>
+      </li>
       <li class="header__item">
         <a href="#" class="header__link">How it’s made?</a>
       </li>
       <li class="header__item">
-        <a href="#" class="header__link">Our products</a>
+        <a href="./index.html" class="header__link">Our products</a>
       </li>
       <li class="header__item">
-        <a href="#" class="header__link">Contact</a>
+        <a href="./index.html" class="header__link">Contact</a>
       </li>
     </ul>
-    <button type="button" class="header__button">Buy now</button>
-    <!-- <svg class="header__icon__button"><use href=""></use></svg> -->
+    <button type="button" class="header__button">
+      Buy now
+      <svg class="header__icon__button">
+        <use href="./images/symbol-defs.svg"></use>
+      </svg>
+    </button>
   </div>
 </section>
