@@ -854,6 +854,7 @@ ul {
   align-items: center;
 }
 .gallery__photo {
+  display: none;
   width: 280px;
   height: 130px;
   position: absolute;
@@ -879,6 +880,9 @@ ul {
     height: 422px;
     top: -50px;
   }
+}
+.gallery__photo--active {
+  display: block;
 }
 .gallery__feedbacks-list {
   display: flex;
