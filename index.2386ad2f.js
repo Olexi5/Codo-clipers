@@ -1,0 +1,2 @@
+var galleryFeedbacks=document.querySelectorAll(".gallery__feedback"),galleryDots=document.querySelectorAll(".gallery__dot"),slideIndex=0;galleryFeedbacks.forEach((function(e,l){e.addEventListener("click",(function(){galleryFeedbacks[slideIndex].classList.remove("gallery__feedback--active"),galleryDots[slideIndex].classList.remove("gallery__dot--active"),slideIndex=(l+1)%galleryFeedbacks.length,galleryFeedbacks[slideIndex].classList.add("gallery__feedback--active"),galleryDots[slideIndex].classList.add("gallery__dot--active")}))}));
+//# sourceMappingURL=index.2386ad2f.js.map
