@@ -30,6 +30,7 @@
   }
 
   &__photo {
+    display: none;
     width: 280px;
     height: 130px;
 
@@ -53,6 +54,10 @@
       height: 422px;
       top: -50px;
     }
+  }
+
+  &__photo--active {
+    display: block;
   }
 
   &__feedbacks-list {
