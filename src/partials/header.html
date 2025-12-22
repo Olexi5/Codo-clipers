@@ -1,65 +1,78 @@
 <section class="header">
-  <div class="header__all__div">
-    <svg><use href="./images/symbol-defs.svg#icon-Logo"></use></svg>
-    <button type="button" data-mob-open>
-      <svg class="header__buttonburger">
-        <use href="./images/symbol-defs.svg#icon-hero-icon-burger"></use>
-      </svg>
-      <div class="is-hidden" data-mob>
-        <div class="container">
-          <button type="button" data-mob-close>
-            <svg class="header__modalclose">
+  <div class="header__all__div container">
+    <div class="header__div__logburg">
+      <a href="#" class="header__link__logo">
+        <svg class="header__logo__icon">
+          <use href="./images/symbol-defs.svg#icon-Logo"></use></svg
+      ></a>
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="./index.html" class="header__link">Home</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">How it’s made?</a>
+        </li>
+        <li class="header__item">
+          <a href="./index.html" class="header__link">Our products</a>
+        </li>
+        <li class="header__item">
+          <a href="./index.html" class="header__link">Contact</a>
+        </li>
+      </ul>
+      <div class="header__div__burgbutt">
+        <button type="button" class="header__buttonburger" data-mob-open>
+          <svg class="header__buttonburger__icon">
+            <use href="./images/symbol-defs.svg#icon-hero-icon-burger"></use>
+          </svg>
+        </button>
+        <button type="button" class="header__button__buy">
+          Buy now
+          <svg class="header__modalbutt__icon">
+            <use href="./images/symbol-defs.svg#icon-hero-icon-butt"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__div__hidden is-hidden" data-mob>
+      <div class="header__modal__div container">
+        <div class="modal__head">
+          <a href="#" class="header__link__logo">
+            <svg class="header__logo__icon">
+              <use href="./images/symbol-defs.svg#icon-Logo"></use></svg
+          ></a>
+          <button type="button" class="header__modal__close" data-mob-close>
+            <svg class="header__modalclose__icon">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
-          <nav class="header__modalnav">
-            <ul class="header__modallist">
-              <li class="header__modalitem">
-                <a href="./index.html" class="header__modallink">Home</a>
-              </li>
-              <li class="header__modalitem">
-                <a href="./index.html" class="header__modallink"
-                  >How it’s made?</a
-                >
-              </li>
-              <li class="header__modalitem">
-                <a href="./index.html" class="header__modallink"
-                  >Our products</a
-                >
-              </li>
-              <li class="header__modalitem">
-                <a href="./index.html" class="header__modallink">Contact</a>
-              </li>
-            </ul>
-          </nav>
+        </div>
+        <nav class="header__modalnav">
+          <ul class="header__modallist">
+            <li class="header__modalitem">
+              <a href="./index.html" class="header__modallink">Home</a>
+            </li>
+            <li class="header__modalitem">
+              <a href="./index.html" class="header__modallink"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="header__modalitem">
+              <a href="./index.html" class="header__modallink">Our products</a>
+            </li>
+            <li class="header__modalitem">
+              <a href="./index.html" class="header__modallink">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__modalbutt__div">
           <button type="button" class="header__modalbutton__buy">
             Buy now
-            <svg>
+            <svg class="header__modalbutt__icon">
               <use href="./images/symbol-defs.svg#icon-hero-icon-butt"></use>
             </svg>
           </button>
         </div>
       </div>
-    </button>
-    <ul class="header__list">
-      <li class="header__item">
-        <a href="./index.html" class="header__link">Home</a>
-      </li>
-      <li class="header__item">
-        <a href="#" class="header__link">How it’s made?</a>
-      </li>
-      <li class="header__item">
-        <a href="./index.html" class="header__link">Our products</a>
-      </li>
-      <li class="header__item">
-        <a href="./index.html" class="header__link">Contact</a>
-      </li>
-    </ul>
-    <button type="button" class="header__button">
-      Buy now
-      <svg class="header__icon__button">
-        <use href="./images/symbol-defs.svg"></use>
-      </svg>
-    </button>
+    </div>
   </div>
 </section>
