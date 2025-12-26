@@ -1,9 +1,165 @@
 .header {
   width: 100%;
   position: absolute;
+  top: 12px;
 }
-.header__buttonburger{
+.no-scroll {
+  overflow: hidden;
+}
+.is-hidden {
+  display: none;
+}
+.header__div__hidden {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.header__modal__div {
+  padding: 20px 20px 88px 20px;
+  background: rgba(132, 161, 120, 1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header__div__logburg {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+  }
+}
+.header__logo__icon {
+  width: 48px;
+  height: 44px;
+  fill: rgba(248, 210, 78, 1);
+  @media screen and (min-width: 1200px) {
+    width: 60px;
+    height: 65px;
+  }
+}
+.header__buttonburger {
   background: none;
   border: none;
   outline: none;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.header__buttonburger__icon {
+  width: 32px;
+  height: 32px;
+  fill: rgba(255, 255, 255, 1);
+}
+.header__list {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 28px;
+  }
+}
+.header__link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fcfcfc;
+  &:hover {
+    color: #f8d24e;
+  }
+}
+.header__button {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.modal__head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.header__modalclose__icon {
+  width: 19px;
+  height: 19px;
+}
+.header__modal__close {
+  border: none;
+  background: none;
+  fill: rgba(252, 252, 252, 1);
+}
+.header__modalnav {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 114px;
+}
+.header__modallist {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.header__modalitem {
+  display: flex;
+  justify-content: center;
+}
+.header__modallink {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #fcfcfc;
+  &:hover {
+    color: #131313;
+  }
+}
+.header__modalbutton__buy {
+  display: block;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: none;
+  padding: 12px 36px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+.header__modalbutt__icon {
+  width: 6px;
+  height: 10px;
+  margin-left: 4px;
+}
+.header__modalbutt__div {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.header__button__buy {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    background: #f8d24e;
+    border-radius: 10px;
+    border: none;
+    padding: 12px 36px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: 36px;
+  }
+}
+.header__div__burgbutt {
+  display: flex;
+  align-items: center;
 }
