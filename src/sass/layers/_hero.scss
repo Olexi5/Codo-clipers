@@ -6,8 +6,27 @@
   font-family: 'Seymour One', sans-serif;
   font-size: 26px;
   font-weight: 400;
+  @media screen and (min-width: 1200px) {
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+  }
 }
-
+.hero__title > span {
+  font-size: 34px;
+  line-height: 33px;
+  @media screen and (min-width: 1200px) {
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+  }
+}
 .hero__title__passion {
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -21,6 +40,16 @@
 .hero {
   background: #84a178;
   padding-top: 98px;
+  @media screen and (min-width: 480px) {
+    height: 422px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 440px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 118px;
+    height: 620px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -30,7 +59,18 @@
 }
 
 .hero__passion__div {
-  margin-bottom: 12px;
+  margin-bottom: 19px;
+  margin-top: 0;
+  @media screen and (min-width: 480px) {
+    padding-right: 200px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+    padding-right: 500px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 780px;
+  }
 }
 
 .hero__blowtext__div {
@@ -54,6 +94,15 @@
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 600;
+  margin-right: 12px;
+  @media screen and (min-width: 1200px) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #131313;
+  }
 }
 
 .hero__link {
@@ -64,84 +113,100 @@
   font-size: 12px;
   font-weight: 600;
   text-decoration: underline;
+  @media screen and (min-width: 1200px) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: #f8d24e;
+  }
 }
-
+.hero__alldiv__imgs {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 480px) {
+    justify-content: flex-end;
+    position: relative;
+    top: -123px;
+  }
+  @media screen and (min-width: 768px) {
+    top: -316px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: -669px;
+  }
+}
 .hero__div__bigicecream {
+  position: relative;
   justify-content: center;
   display: flex;
-}
-
-@media screen and (min-width: 480px) {
-  .hero__div__bigicecream {
-    position: relative;
-    bottom: 0;
+  @media screen and (min-width: 480px) {
+    justify-content: flex-end;
   }
 }
-
-@media screen and (min-width: 480px) {
-  .hero__bigicecream {
-    right: 20px;
-  }
-}
-
-.hero__plate__img {
-  margin-right: 32px;
-}
-
-.hero__plate__text {
-  color: #fff;
-  margin-bottom: 29px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 17px;
-}
-
-.hero__icon__plate {
-  width: 40px;
-  height: 16px;
-  fill: #fcfcfc;
-}
-
-.hero__list,
-.hero__plate__div {
+.hero__bigicecream__pc {
   display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .hero__plate__div {
+  @media screen and (min-width: 1200px) {
     display: flex;
+    position: relative;
+    right: 92px;
+    z-index: 2;
   }
 }
-.hero__div__bigicecream {
-  justify-content: center;
-  display: flex;
-}
-
-@media screen and (min-width: 480px) {
-  .hero__div__bigicecream {
+.hero__bigicecream {
+  z-index: 2;
+  @media screen and (min-width: 480px) {
+    width: 217px;
+    height: 267px;
     position: relative;
+    right: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 268px;
+    height: 329px;
+    right: 92px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.hero__points {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.hero__points__tablet {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.hero__points__pc {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    position: absolute;
     bottom: 0;
   }
 }
-
-@media screen and (min-width: 480px) {
-  .hero__bigicecream {
-    right: 20px;
-  }
-}
-
-.hero__plate__img {
-  margin-right: 32px;
-}
-
 .hero__plate__text {
   color: #fff;
   margin-bottom: 29px;
   font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
   font-weight: 400;
-  line-height: 17px;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .hero__icon__plate {
@@ -149,12 +214,109 @@
   height: 16px;
   fill: #fcfcfc;
 }
-
-.hero__list,
+.hero__list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    right: 32px;
+    top: 94px;
+    gap: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: -230px;
+  }
+}
+.hero__pretitle__cafes {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #131313;
+  margin-bottom: 4px;
+  margin-top: 0;
+  @media screen and (min-width: 1200px) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 46px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #131313;
+  }
+}
+.hero__text__cafes {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  text-align: right;
+  color: #fcfcfc;
+  @media screen and (min-width: 1200px) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    color: #fcfcfc;
+  }
+}
 .hero__plate__div {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+  }
+  @media screen and (min-width: 1200px) {
+    top: -166px;
+  }
+}
+.hero__plate__img {
+  margin-right: 32px;
+  @media screen and (min-width: 1200px) {
+    width: 225px;
+    height: 225px;
+  }
+}
+.hero__div__platetext {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding-right: 425px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 750px;
+  }
+}
+.hero__plate__img {
+  margin-right: 32px;
+}
+.hero__plate__text {
+  color: #fff;
+  margin-bottom: 29px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  @media screen and (min-width: 1200px) {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #fff;
+  }
 }
 
+.hero__icon__plate {
+  width: 40px;
+  height: 16px;
+  fill: #fcfcfc;
+}
 @media screen and (min-width: 768px) {
   .hero__plate__div {
     display: flex;

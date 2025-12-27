@@ -13,7 +13,6 @@
   position: fixed;
   left: 0;
   width: 100vw;
-  height: 100vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -132,6 +131,7 @@
   width: fit-content;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .header__modalbutt__icon {
   width: 6px;
@@ -146,7 +146,13 @@
   }
 }
 .header__button__buy {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
   display: none;
+  cursor: pointer;
   @media screen and (min-width: 768px) {
     display: block;
     background: #f8d24e;
