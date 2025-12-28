@@ -5,6 +5,9 @@
   "homepage": "https://Olexi5.github.io/Codo-clipers",
   "scripts": {
     "start": "parcel src/*.html",
+    "dev": "parcel src/*.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "parcel build src/*.html --public-url /Codo-clipers/"
   },
   "repository": {
