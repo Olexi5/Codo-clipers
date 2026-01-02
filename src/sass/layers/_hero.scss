@@ -286,6 +286,10 @@
 }
 .hero__plate__img {
   margin-right: 32px;
+  @media screen and (min-width: 768px) {
+    width: 152px;
+    height: 152px;
+  }
   @media screen and (min-width: 1200px) {
     width: 225px;
     height: 225px;
@@ -298,9 +302,6 @@
     flex-direction: column;
     width: 155px;
   }
-}
-.hero__plate__img {
-  margin-right: 32px;
 }
 .hero__plate__text {
   color: #fff;
