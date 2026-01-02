@@ -1239,42 +1239,108 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 568px;
-  height: 449px;
+  width: 280px;
+  height: 459px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .howmade-modal {
+    width: 508px;
+    height: 389px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-modal {
+    width: 568px;
+    height: 449px;
+  }
 }
 
 .howmade-btn-modal-close {
-  position: relative;
-  top: 5px;
-  left: 270px;
   border: none;
   width: 24px;
   height: 24px;
   background: none;
+  position: relative;
+  left: 125px;
+}
+@media screen and (min-width: 768px) {
+  .howmade-btn-modal-close {
+    left: 240px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-btn-modal-close {
+    top: 5px;
+    left: 270px;
+  }
 }
 
 .howmade-modal-title {
   font-family: "Seymour One", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0%;
-  margin-bottom: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .howmade-modal-title {
+    font-family: "Seymour One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin-bottom: 32px;
+  }
 }
 
 .howmade-video {
-  background-color: black;
+  width: 224px;
+  height: 199px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .howmade-video {
+    width: 335px;
+    height: 159px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-video {
+    width: 448px;
+    height: 205px;
+  }
 }
 
 .howmade-modal-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 140%;
   letter-spacing: 0%;
-  margin-top: 32px;
+  text-align: start;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+@media screen and (min-width: 768px) {
+  .howmade-modal-text {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howmade-modal-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    margin-top: 32px;
+    text-align: center;
+  }
 }
 
 .gallery {
