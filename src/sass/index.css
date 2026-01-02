@@ -43,6 +43,7 @@ ul {
   width: 100%;
   position: absolute;
   top: 12px;
+  z-index: 2;
 }
 
 .no-scroll {
@@ -261,6 +262,11 @@ ul {
   font-size: 26px;
   font-weight: 400;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    margin-bottom: 24px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-family: "Seymour One", sans-serif;
@@ -298,6 +304,8 @@ ul {
 }
 
 .hero {
+  position: relative;
+  z-index: 1;
   background: #84a178;
   padding-top: 98px;
 }
@@ -308,34 +316,31 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: 440px;
+    padding-bottom: 176px;
+    padding-top: 80px;
+    height: 415px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 118px;
-    height: 620px;
+    height: 664px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-bottom: 12px;
-  }
-}
 .hero__passion__div {
   margin-bottom: 19px;
   margin-top: 0;
 }
 @media screen and (min-width: 480px) {
   .hero__passion__div {
-    padding-right: 200px;
+    padding-right: 150px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__passion__div {
     margin-bottom: 12px;
-    padding-right: 500px;
+    padding-right: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -366,6 +371,7 @@ ul {
   font-size: 12px;
   font-weight: 600;
   margin-right: 12px;
+  cursor: pointer;
 }
 @media screen and (min-width: 1200px) {
   .hero__button {
@@ -375,6 +381,7 @@ ul {
     line-height: 18px;
     text-align: center;
     color: #131313;
+    margin-right: 34px;
   }
 }
 
@@ -387,6 +394,7 @@ ul {
   font-size: 12px;
   font-weight: 600;
   text-decoration: underline;
+  cursor: pointer;
 }
 @media screen and (min-width: 1200px) {
   .hero__link {
@@ -409,17 +417,19 @@ ul {
   .hero__alldiv__imgs {
     justify-content: flex-end;
     position: relative;
-    top: -123px;
+    right: 0;
+    bottom: 0;
+    top: 140px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__alldiv__imgs {
-    top: -316px;
+    top: 55px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__alldiv__imgs {
-    top: -669px;
+    top: 169px;
   }
 }
 
@@ -440,9 +450,10 @@ ul {
 @media screen and (min-width: 1200px) {
   .hero__bigicecream__pc {
     display: flex;
-    position: relative;
+    position: absolute;
     right: 92px;
     z-index: 2;
+    bottom: 0;
   }
 }
 
@@ -453,7 +464,8 @@ ul {
   .hero__bigicecream {
     width: 217px;
     height: 267px;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     right: 20px;
   }
 }
@@ -462,6 +474,7 @@ ul {
     width: 268px;
     height: 329px;
     right: 92px;
+    bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -534,13 +547,13 @@ ul {
     align-items: flex-end;
     position: relative;
     right: 32px;
-    top: 94px;
+    top: -170px;
     gap: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__list {
-    top: -230px;
+    top: -215px;
   }
 }
 
@@ -591,13 +604,14 @@ ul {
   .hero__plate__div {
     display: flex;
     align-items: center;
-    position: relative;
+    position: absolute;
+    bottom: 12px;
     z-index: 999;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__plate__div {
-    top: -166px;
+    bottom: 65px;
   }
 }
 
@@ -618,12 +632,7 @@ ul {
   .hero__div__platetext {
     display: flex;
     flex-direction: column;
-    padding-right: 425px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__div__platetext {
-    padding-right: 750px;
+    width: 155px;
   }
 }
 
@@ -655,14 +664,9 @@ ul {
   fill: #fcfcfc;
 }
 
-@media screen and (min-width: 768px) {
-  .hero__plate__div {
-    display: flex;
-  }
-}
 .product {
   margin-top: 60px;
-  background-image: url("../images/ice-cream-img/background_1x.jpg");
+  background-image: url("/src/images/icecream_img/background_1x.jpg");
   padding-bottom: 60px;
 }
 
@@ -1277,7 +1281,7 @@ ul {
   position: relative;
   padding-top: 178px;
   padding-bottom: 393px;
-  background-image: url("../images/ice-cream-img/background_1x.jpg");
+  background-image: url("/src/images/icecream_img/background_1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
