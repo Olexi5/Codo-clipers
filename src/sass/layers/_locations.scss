@@ -1,4 +1,5 @@
 .location {
+  align-items: center;
   background-image: linear-gradient(to top, #84a178 80%, #ffffff 20%);
 }
 .location__list {
@@ -7,8 +8,13 @@
     justify-content: space-between;
     gap: 32px;
   }
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.location__line {
+.location__first__block,
+.location__second__block {
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 24px;
 }
@@ -113,8 +119,8 @@
     gap: 16px;
   }
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .location__button {
   border-color: transparent;
