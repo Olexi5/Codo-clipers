@@ -693,6 +693,15 @@ ul {
   }
 }
 
+.product-modal-close {
+  background-color: transparent;
+  border: 0;
+  font-size: 25px;
+  position: absolute;
+  top: 1%;
+  left: 90%;
+}
+
 .product-title {
   font-family: "Seymour One";
   font-weight: 400;
@@ -858,6 +867,7 @@ ul {
   width: 280px;
   height: 800px;
   background-color: white;
+  overflow-y: scroll;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 40px;
