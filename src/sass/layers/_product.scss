@@ -1,6 +1,6 @@
 .product {
   margin-top: 60px;
-  background-image: url('../images/ice-cream-img/background_1x.jpg');
+  background-image: url('/src/images/icecream_img/background_1x.jpg');
   padding-bottom: 60px;
 }
 
@@ -20,8 +20,14 @@
 .product-title {
   font-family: 'Seymour One';
   font-weight: 400;
-  font-size: 36px;
+  font-size: 30px;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .product-subtitle {

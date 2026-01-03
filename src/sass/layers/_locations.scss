@@ -2,6 +2,17 @@
   background-image: linear-gradient(to top, #84a178 80%, #ffffff 20%);
 }
 .location__list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
@@ -17,13 +28,20 @@
   margin-bottom: 64px;
   border: 1px solid #e1e1e1;
   border-radius: 30px;
-  width: 368;
-  height: 542;
+  width: 280px;
   left: 16px;
   opacity: 1;
   border-width: 1px;
   border: 1px solid #e1e1e1;
   background-color: white;
+  gap: 48px;
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    padding-left: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+  }
 }
 .location__logo {
   padding: 4px 14px;
@@ -107,14 +125,19 @@
   color: #131313;
 }
 .location__button__list {
-  @media screen and (min-width: 1200px) {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
     justify-content: center;
     gap: 16px;
   }
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    gap: 16px;
+  }
 }
 .location__button {
   border-color: transparent;
