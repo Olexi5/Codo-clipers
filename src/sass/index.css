@@ -892,28 +892,48 @@ ul {
 .modal-cal-frame {
   border: 2px solid #9cbe8f;
   border-radius: 40px;
-  width: 65px;
-  height: 90px;
+  width: 53px;
+  height: 72px;
+}
+@media screen and (min-width: 768px) {
+  .modal-cal-frame {
+    width: 65px;
+    height: 90px;
+  }
 }
 
 .modal-cal-ammount {
-  margin-left: 4px;
+  font-family: "Montserrat";
+  width: 43px;
+  height: 43px;
+  margin-left: 3px;
   background-color: #9cbe8f;
   margin-bottom: 10px;
   border: 2px solid #9cbe8f;
   border-radius: 100%;
-  width: 53px;
-  height: 53px;
-  font-family: Montserrat;
+  font-size: 10px;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 28px;
+  font-size: 10px;
+  line-height: 43px;
+}
+@media screen and (min-width: 768px) {
+  .modal-cal-ammount {
+    line-height: 43px;
+    width: 53px;
+    height: 53px;
+    font-size: 12px;
+  }
 }
 
 .modal-cal-desc {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) {
+  .modal-cal-desc {
+    font-size: 12px;
+  }
 }
 
 .product-modal-title {
@@ -921,6 +941,7 @@ ul {
   font-family: "Seymour One";
   font-weight: 400;
   font-size: 20px;
+  margin-bottom: 181px;
 }
 
 .modal-ing-title {
@@ -960,20 +981,25 @@ ul {
 .pmf-input {
   margin: 0 auto;
   display: block;
-  width: 368px;
-  height: 42px;
+  width: 100%;
   padding: 11px 16px;
   color: black;
   font-size: 14px;
+  height: 42px;
   background-color: rgba(248, 210, 78, 0.1019607843);
   border: 1px solid #84a178;
   border-radius: 10px;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .pmf-input {
+    width: 368px;
+  }
+}
 
 .pmf-comment {
   margin: 0 auto;
-  width: 368px;
+  width: 100%;
   height: 84px;
   padding: 11px 16px;
   color: black;
@@ -984,17 +1010,39 @@ ul {
   border-radius: 10px;
   padding-bottom: 53px;
 }
+@media screen and (min-width: 768px) {
+  .pmf-comment {
+    width: 368px;
+  }
+}
 
 .pmf-button {
   margin-top: 32px;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 14px;
-  margin-left: 180px;
+  margin-left: 40px;
   padding: 13px 34px;
   background-color: #f8d24e;
   border: 0;
   border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .pmf-button {
+    margin-left: 180px;
+  }
+}
+
+.product-modal-img {
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 768px) {
+  .product-modal-img {
+    top: 70px;
+  }
 }
 
 .howmade {
