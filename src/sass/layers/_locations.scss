@@ -1,12 +1,26 @@
 .location {
   align-items: center;
-  background-image: linear-gradient(to top, #84a178 80%, #ffffff 20%);
+  position: absolute;
+  top: 4700px;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (min-width: 480px) {
+    top: 4400px;
+  }
+  @media screen and (min-width: 768px) {
+    top: 2700px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 3600px;
+  }
 }
 .location__list {
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    flex-wrap: nowrap;
   }
   align-items: center;
   display: flex;
